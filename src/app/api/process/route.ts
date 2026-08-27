@@ -63,7 +63,7 @@ Return the output EXACTLY matching this JSON schema:
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-1.5-pro",
+      model: "gemini-2.0-flash",
       contents: [prompt, ...qpParts, "--- ANSWER SHEET ---", ...asParts],
       config: {
         responseMimeType: "application/json",
