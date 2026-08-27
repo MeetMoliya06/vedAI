@@ -70,7 +70,7 @@ Return the output EXACTLY matching this JSON schema:
       },
     });
 
-    const textResponse = response.text();
+    const textResponse = response.text;
     if (!textResponse) {
       throw new Error("No response from Gemini");
     }

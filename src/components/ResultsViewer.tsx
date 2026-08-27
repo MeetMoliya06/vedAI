@@ -41,7 +41,7 @@ export default function ResultsViewer({ data, answerSheetUrl, onReset }: Results
           canvas.height = viewport.height;
           canvas.width = viewport.width;
           
-          await page.render({ canvasContext: ctx, viewport }).promise;
+          await page.render({ canvasContext: ctx, viewport, canvas }).promise;
           setImageUrl(canvas.toDataURL("image/png"));
         }
       } catch (err) {
